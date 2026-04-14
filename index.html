@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giorgio Zoccatelli — Data Science & Engineering</title>
+
+  <meta name="title" content="Giorgio Zoccatelli — Data Science & Engineering" />
+  <meta name="description" content="Portfolio and CV of Giorgio Zoccatelli, MSc student in Data Science and Engineering at Politecnico di Torino." />
+  <meta name="author" content="Giorgio Zoccatelli" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/giorgiozoccatelli/" />
+  <meta property="og:title" content="Giorgio Zoccatelli — Data Science & Engineering" />
+  <meta property="og:description" content="Portfolio and CV of Giorgio Zoccatelli, MSc student in Data Science and Engineering at Politecnico di Torino." />
+  <meta property="og:image" content="https://giorgiozoccatelli.github.io/og-image.jpg" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://giorgiozoccatelli.github.io/" />
+  <meta property="twitter:title" content="Giorgio Zoccatelli — Data Science & Engineering" />
+  <meta property="twitter:description" content="Portfolio and CV of Giorgio Zoccatelli, MSc student in Data Science and Engineering at Politecnico di Torino." />
+  <meta property="twitter:image" content="https://giorgiozoccatelli.github.io/og-image.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23ffffff'/%3E%3Ctext x='50' y='70' font-family='system-ui, sans-serif' font-size='55' text-anchor='middle'%3E%3Ctspan fill='%2318181b' font-weight='400'%3EG%3C/tspan%3E%3Ctspan fill='%232563eb' font-weight='600'%3EZ%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">G. Zoccatelli</a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="cv.html" class="nav-link">CV</a>
+    <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">Light</button>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <p class="hero-kicker">Data Science &amp; Engineering</p>
+        <h1 class="hero-name">Giorgio<br><em>Zoccatelli</em></h1>
+        <div class="status">
+          MSc student &middot; Politecnico di Torino
+        </div>
+        <p class="hero-bio">
+          MSc student in Data Science and Engineering at Politecnico di Torino. I combine a strong mathematical foundation with hands-on programming to build interpretable models and efficient data pipelines. Recently, I served as a Teaching Assistant for the Computer Science course and explored my interest in quantitative finance as a member of the Research area within the Starting Finance team.
+        </p>
+        <div class="hero-links">
+          <a href="cv.html" class="btn btn-primary">View CV</a>
+          <a href="mailto:giorgio.zoccatelli20@gmail.com" class="btn btn-ghost">Email &#8599;</a>
+          <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank" class="btn btn-ghost">LinkedIn &#8599;</a>
+          <a href="https://github.com/giorgiozoccatelli" target="_blank" class="btn btn-ghost">GitHub &#8599;</a>
+        </div>
+      </div>
+      <div class="photo-wrap">
+        <div class="photo-frame">
+          <img src="photo.jpg" alt="Giorgio Zoccatelli"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="photo-placeholder" style="display:none;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            <span>your photo</span>
+          </div>
+        </div>
+        <div class="photo-accent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<section id="projects">
+  <div class="container">
+    
+    <div class="page-header" style="margin-bottom: 2rem;">
+      <h2 class="page-title">Selected Projects</h2>
+    </div>
+
+    <div class="project-list">
+
+      <a href="https://github.com/giorgiozoccatelli/RL_project0" target="_blank" class="project-item">
+        <span class="project-num">01</span>
+        <div>
+          <h3 class="project-title">Advanced Reinforcement Learning Suite</h3>
+          <p class="project-desc">Implementation and benchmarking of VPG, Actor-Critic, and PPO algorithms. The project focuses on optimizing policy-based methods to solve complex control tasks within OpenAI Gym environments.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Gymnasium</span><span class="tag">PyTorch</span><span class="tag">NumPy</span><span class="tag">LateX</span><span class="tag">Reinforcement Learning</span>
+          </div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a href="https://github.com/giorgiozoccatelli/DSML-LAB/tree/main/Project" target="_blank" class="project-item">
+        <span class="project-num">02</span>
+        <div>
+          <h3 class="project-title">News Classification via Textual Metadata</h3>
+          <p class="project-desc">Developed a robust classification system using Support Vector Classifiers (SVC). The model leverages textual metadata to categorize news articles with high precision across multiple domains.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span><span class="tag">LateX</span><span class="tag">NLP</span>
+          </div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+      <a href="https://github.com/giorgiozoccatelli/ComputationalLinearAlgebra" target="_blank" class="project-item">
+        <span class="project-num">03</span>
+        <div>
+          <h3 class="project-title">Computational Linear Algebra Toolkit</h3>
+          <p class="project-desc">A comprehensive study of matrix factorization and dimensionality reduction. Applied PageRank, PCA, and Spectral Clustering to extract structural insights from high-dimensional datasets.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span><span class="tag">LateX</span><span class="tag">Linear Algebra</span>
+          </div>
+        </div>
+        <span class="project-arrow">&#8599;</span>
+      </a>
+
+    </div>
+
+    <div class="contact-bar">
+      <div class="contact-text">
+        <h3>Open to opportunities</h3>
+        <p>Research positions, internships, and collaborations &mdash; feel free to reach out.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:giorgio.zoccatelli20@gmail.com" class="btn btn-primary">Get in touch</a>
+        <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank" class="btn btn-ghost">LinkedIn &#8599;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p>&copy; 2026 Giorgio Zoccatelli &middot; Turin, Italy</p>
+    <div class="footer-links">
+      <a href="mailto:giorgio.zoccatelli20@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank">LinkedIn</a>
+      <a href="https://github.com/giorgiozoccatelli" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

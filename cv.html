@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Giorgio Zoccatelli</title>
+  
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23ffffff'/%3E%3Ctext x='50' y='70' font-family='system-ui, sans-serif' font-size='55' text-anchor='middle'%3E%3Ctspan fill='%2318181b' font-weight='400'%3EG%3C/tspan%3E%3Ctspan fill='%232563eb' font-weight='600'%3EZ%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">G. Zoccatelli</a>
+  <div class="nav-right">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="index.html#projects" class="nav-link">Projects</a>
+    <a href="cv.html" class="nav-link">CV</a>
+    <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">Light</button>
+  </div>
+</nav>
+
+<section id="cv">
+  <div class="container">
+    
+    <div class="page-header">
+      <h1 class="page-title">Curriculum Vitae</h1>
+      <a href="Giorgio_Zoccatelli.pdf" class="btn btn-ghost" download style="font-size:.85rem; border-color:var(--border-strong);">&#8595; Download PDF</a>
+    </div>
+    
+    <div class="cv-cols">
+
+      <div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Languages</p>
+          <div class="lang-item"><span>Italian</span><span class="lang-level">Native</span></div>
+          <div class="lang-item"><span>English</span><span class="lang-level">IELTS C1 (7.5)</span></div>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Programming</p>
+          <span class="skill-pill">Python</span><span class="skill-pill">SQL</span><span class="skill-pill">MATLAB</span><span class="skill-pill">C</span>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Libraries</p>
+          <span class="skill-pill">NumPy</span><span class="skill-pill">Pandas</span><span class="skill-pill">PyTorch</span><span class="skill-pill">Scikit-learn</span><span class="skill-pill">Matplotlib</span><span class="skill-pill">Apache Spark</span>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Tools</p>
+          <span class="skill-pill">Git</span><span class="skill-pill">VS Code</span><span class="skill-pill">JupyterLab</span>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Contact</p>
+          <div style="display:flex;flex-direction:column;gap:.4rem;">
+            <a href="mailto:giorgio.zoccatelli20@gmail.com" style="font-size:.85rem;color:var(--accent);text-decoration:none;word-break:break-all;">giorgio.zoccatelli20@gmail.com</a>
+            <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank" style="font-size:.85rem;color:var(--accent);text-decoration:none;">linkedin/giorgiozoccatelli</a>
+            <a href="https://github.com/giorgiozoccatelli" target="_blank" style="font-size:.85rem;color:var(--accent);text-decoration:none;">github/giorgiozoccatelli</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cv-block">
+          <p class="cv-block-title">Education</p>
+          <div class="cv-entry">
+            <div class="cv-entry-header"><span class="cv-role">MSc in Data Science Engineering</span><span class="cv-date">Mar 2025 &mdash; Present</span></div>
+            <p class="cv-org">Politecnico di Torino</p>
+            <p class="cv-detail">Core courses: Machine Learning &amp; Deep Learning, Computational Linear Algebra, Mathematics in Machine Learning, Time-Variant Data Analysis, Data Management &amp; Visualization, Distributed Architectures, Information Theory for Data Science.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-header"><span class="cv-role">BSc in Electronic Engineering</span><span class="cv-date">Sep 2021 &mdash; Mar 2025</span></div>
+            <p class="cv-org">Politecnico di Torino</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-header"><span class="cv-role">High School Diploma, Science Track</span><span class="cv-date">Sep 2016 &mdash; Jun 2021</span></div>
+            <p class="cv-org">Liceo Scientifico Galileo Ferraris</p>
+          </div>
+        </div>
+
+        <div class="cv-block">
+          <p class="cv-block-title">Experience</p>
+          <div class="cv-entry">
+            <div class="cv-entry-header"><span class="cv-role">Quantitative Analyst</span><span class="cv-date">Oct 2025 &mdash; Present</span></div>
+            <p class="cv-org">Starting Finance Club PoliTo &middot; Turin, Italy</p>
+            <p class="cv-detail">Developing research on financial time series and asset interactions, utilizing quantitative modeling and statistical analysis to derive insights into market dynamics and portfolio behavior.</p>
+          </div>
+          <div class="cv-entry">
+            <div class="cv-entry-header"><span class="cv-role">Teaching Assistant</span><span class="cv-date">Sep 2025 &mdash; Feb 2026</span></div>
+            <p class="cv-org">Politecnico di Torino &middot; Turin, Italy</p>
+            <p class="cv-detail">Provided teaching support to first-year engineering students during Python problem-solving sessions, helping them build foundational programming skills and improve their logical thinking.</p>
+          </div>
+        </div>
+
+        <div class="cv-block">
+          <p class="cv-block-title">Volunteering</p>
+          <div class="cv-entry">
+            <div class="cv-entry-header"><span class="cv-role">Volunteer</span><span class="cv-date">Mar 2024 &mdash; Feb 2025</span></div>
+            <p class="cv-org">Croce Rossa Italiana</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact-bar">
+      <div class="contact-text">
+        <h3>Open to opportunities</h3>
+        <p>Research positions, internships, and collaborations &mdash; feel free to reach out.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:giorgio.zoccatelli20@gmail.com" class="btn btn-primary">Get in touch</a>
+        <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank" class="btn btn-ghost">LinkedIn &#8599;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p>&copy; 2026 Giorgio Zoccatelli &middot; Turin, Italy</p>
+    <div class="footer-links">
+      <a href="mailto:giorgio.zoccatelli20@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank">LinkedIn</a>
+      <a href="https://github.com/giorgiozoccatelli" target="_blank">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
