@@ -11,3 +11,16 @@ function toggleTheme(){
   var b=document.getElementById('themeBtn');
   if(b)b.textContent=t==='dark'?'\u25cf dark':'\u25cb light';
 })();
+(function(){
+  var els=document.querySelectorAll('[data-reveal]');
+  if(!('IntersectionObserver' in window)||!els.length)return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
