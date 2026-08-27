@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,30 +27,39 @@
 <section id="cv">
   <div class="container">
     
+    <p class="eyebrow">background</p>
     <div class="page-header">
       <h1 class="page-title">Curriculum Vitae</h1>
       <a href="Giorgio_Zoccatelli.pdf" class="btn btn-ghost" download style="font-size:.85rem; border-color:var(--border-strong);">&#8595; Download PDF</a>
     </div>
-    
+
     <div class="cv-cols">
 
       <div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Academic Record</p>
+          <div class="lang-item"><span>Weighted average</span><span class="lang-level">27+ / 30</span></div>
+        </div>
         <div class="sidebar-item">
           <p class="sidebar-label">Languages</p>
           <div class="lang-item"><span>Italian</span><span class="lang-level">Native</span></div>
           <div class="lang-item"><span>English</span><span class="lang-level">IELTS C1 (7.5)</span></div>
         </div>
         <div class="sidebar-item">
-          <p class="sidebar-label">Programming</p>
-          <span class="skill-pill">Python</span><span class="skill-pill">SQL</span><span class="skill-pill">MATLAB</span><span class="skill-pill">C</span>
+          <p class="sidebar-label">Languages &amp; Databases</p>
+          <span class="skill-pill">Python</span><span class="skill-pill">SQL</span><span class="skill-pill">PostgreSQL</span>
+        </div>
+        <div class="sidebar-item">
+          <p class="sidebar-label">Data Engineering</p>
+          <span class="skill-pill">dbt</span><span class="skill-pill">Airflow</span><span class="skill-pill">Docker</span><span class="skill-pill">Apache Spark</span><span class="skill-pill">Hadoop</span>
         </div>
         <div class="sidebar-item">
           <p class="sidebar-label">Libraries</p>
-          <span class="skill-pill">NumPy</span><span class="skill-pill">Pandas</span><span class="skill-pill">PyTorch</span><span class="skill-pill">Scikit-learn</span><span class="skill-pill">Matplotlib</span><span class="skill-pill">Apache Spark</span>
+          <span class="skill-pill">NumPy</span><span class="skill-pill">Pandas</span><span class="skill-pill">PyTorch</span><span class="skill-pill">Scikit-learn</span><span class="skill-pill">Matplotlib</span>
         </div>
         <div class="sidebar-item">
           <p class="sidebar-label">Tools</p>
-          <span class="skill-pill">Git</span><span class="skill-pill">VS Code</span><span class="skill-pill">JupyterLab</span>
+          <span class="skill-pill">Git</span><span class="skill-pill">Shell</span><span class="skill-pill">VS Code</span><span class="skill-pill">JupyterLab</span>
         </div>
         <div class="sidebar-item">
           <p class="sidebar-label">Contact</p>
@@ -67,8 +76,11 @@
           <p class="cv-block-title">Education</p>
           <div class="cv-entry">
             <div class="cv-entry-header"><span class="cv-role">MSc in Data Science Engineering</span><span class="cv-date">Mar 2025 &mdash; Present</span></div>
-            <p class="cv-org">Politecnico di Torino</p>
-            <p class="cv-detail">Core courses: Financial Engineering, Time-Variant Data Analysis, Machine Learning &amp; Deep Learning, Computational Linear Algebra, Mathematics in Machine Learning, Data Management &amp; Visualization, Distributed Architectures.</p>
+            <p class="cv-org">Politecnico di Torino &middot; weighted average 27+/30</p>
+            <p class="cv-detail" style="margin-bottom:.6rem;">Core coursework:</p>
+            <div class="tags">
+              <span class="tag">Distributed Architectures for Big Data</span><span class="tag">Machine Learning &amp; Deep Learning</span><span class="tag">LLMs for Software Engineering</span><span class="tag">Deep NLP</span><span class="tag">Data Management &amp; Visualization</span><span class="tag">Data Science &amp; Machine Learning</span><span class="tag">Computational Linear Algebra</span><span class="tag">Anomaly Detection</span><span class="tag">Data Ethics &amp; Protection</span>
+            </div>
           </div>
           <div class="cv-entry">
             <div class="cv-entry-header"><span class="cv-role">BSc in Electronic Engineering</span><span class="cv-date">Sep 2021 &mdash; Mar 2025</span></div>
@@ -85,7 +97,7 @@
           <div class="cv-entry">
             <div class="cv-entry-header"><span class="cv-role">Quantitative Analyst</span><span class="cv-date">Oct 2025 &mdash; Present</span></div>
             <p class="cv-org">Starting Finance Club PoliTo &middot; Turin, Italy</p>
-            <p class="cv-detail">Developing research on financial time series and asset interactions, utilizing quantitative modeling and statistical analysis to derive insights into market dynamics and portfolio behavior.</p>
+            <p class="cv-detail">Built Python pipelines to collect, clean, and analyze time-series data, applying statistical and quantitative modeling to study asset interactions &mdash; hands-on practice with the same data-wrangling and modeling workflow used in data engineering and ML projects.</p>
           </div>
           <div class="cv-entry">
             <div class="cv-entry-header"><span class="cv-role">Teaching Assistant</span><span class="cv-date">Sep 2025 &mdash; Feb 2026</span></div>
@@ -108,7 +120,7 @@
     <div class="contact-bar">
       <div class="contact-text">
         <h3>Open to opportunities</h3>
-        <p>Research positions, internships, and collaborations &mdash; feel free to reach out.</p>
+        <p>Data/AI Engineering internships, and interesting collaborations &mdash; feel free to reach out.</p>
       </div>
       <div class="contact-links">
         <a href="mailto:giorgio.zoccatelli20@gmail.com" class="btn btn-primary">Get in touch</a>
@@ -120,7 +132,7 @@
 
 <footer>
   <div class="footer-inner">
-    <p>&copy; 2026 Giorgio Zoccatelli &middot; Turin, Italy</p>
+    <p>// giorgio zoccatelli &mdash; turin, italy &mdash; 2026</p>
     <div class="footer-links">
       <a href="mailto:giorgio.zoccatelli20@gmail.com">Email</a>
       <a href="https://linkedin.com/in/giorgiozoccatelli" target="_blank">LinkedIn</a>
